@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <title>Document</title>
 </head>
+
 <body>
 
-<div>
-  <h1>CrystalsCollector!</h1>
-</div>
+  <div>
+    <h1>CrystalsCollector!</h1>
+  </div>
 
   <div class="instructions">
     <p>You will be given a random number at the start of the game.</p>
@@ -23,21 +26,30 @@
   </div>
 
   <div class="row">
-     <div class="tallyBox"><p>71</p></div>
-     <div class="winLose"><p>Wins: 0</p><p>Losses: 0</p></div>
-   </div>
+    <div class="tallyBox">
+      <p id="targetNum">71</p>
+    </div>
+    <div class="winLose">
+      <p>Wins: <span id="wins">0</span></p>
+      <p>Losses: <span id="losses">0</span></p>
+    </div>
+  </div>
 
-   <div class="crystalRow">
-       <img class="crystal" id="red" src="" alt="red crystal">
-       <img class="crystal" id="blue" src="" alt="blue crystal">
-       <img class="crystal" id="yellow" src="" alt="yellow crystal">
-       <img class="crystal" id="green" src="" alt="green crystal">
-   </div>
+  <div class="crystalRow">
+    <img class="crystal" id="red" src="assets/images/red_gem.png" alt="red crystal">
+    <img class="crystal" id="blue" src="assets/images/blue_gem.png" alt="blue crystal">
+    <img class="crystal" id="yellow" src="assets/images/yellow_gem.png" alt="yellow crystal">
+    <img class="crystal" id="green" src="assets/images/green_gem.png" alt="green crystal">
+  </div>
 
-   <div class="scorekeeper">
-     <p>Your score is: </p>
-     <div class="score"><p>0</p></div>
-   </div>
+  <div class="scorekeeper">
+    <p>Your score is: </p>
+    <div class="score">
+      <p id="score">0</p>
+    </div>
+  </div>
 
+  <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
