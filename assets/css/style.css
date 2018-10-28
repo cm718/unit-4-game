@@ -1,12 +1,19 @@
+body {
+  background-image: url("../images/gems.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1 {
   font-size: 25px;
   padding: 25px;
   background-color: rgb(189, 91, 40);
-  margin: 10px;
+  margin: 0 auto;
   width: 15%;
   color: #fff;
   font-weight: 800;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .instructions {
@@ -15,12 +22,19 @@ h1 {
   width: 30%;
   line-height: 1.5;
   padding: 5px;
-  margin: 10px;
+  margin: 0 auto;
   font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.instructions p {
+  padding: 5px;
 }
 
 .row {
   display: flex;
+  justify-content: center;
 }
 
 .tallyBox {
@@ -33,17 +47,28 @@ h1 {
   height: 60px;
 }
 
+.tallyBox p {
+  text-align: center;
+}
+
 .winLose {
   background-color: rgb(57, 255, 252);
-  padding: 25px;
+  padding: 30px;
   margin: 10px;
   width: 5%;
   height: 60px;
   line-height: 1.5;
 }
 
+.centerizer {
+  display: flex;
+  justify-content: center;
+}
+
 .crystalRow {
   display: flex;
+  justify-content: center;
+  width: 30%;
 }
 
 .crystal {
@@ -61,12 +86,14 @@ h1 {
 .scorekeeper {
   display: flex;
   flex-direction: column;
+  width: 532px;
+  justify-content: center;
 }
 
 .scorekeeper p {
-  margin: 10px;
   padding: 12px;
-  width: 20%;
+  text-align: center;
+  width: 100%;
   color: #fff;
   font-size: 16px;
   background-color: rgb(31, 147, 133);
@@ -74,10 +101,13 @@ h1 {
 
 .scorekeeper p:last-child {
   height: 100px;
-  font-size: 30px;
+  font-size: 60px;
 }
 
 .crystalRow img {
   height: 55px;
   width: 50px;
+  padding: 20px;
+  background: black;
+  border-radius: 7px;
 }
